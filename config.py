@@ -51,7 +51,7 @@ TUT_VID = os.environ.get("TUT_VID","gojfsi/2")
 START_MSG = os.environ.get("START_MESSAGE", "<b>ʜᴇʟʟᴏ {first}\n\n ɪ ᴀᴍ ᴍᴜʟᴛɪ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ , ɪ ᴄᴀɴ sᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ғɪʟᴇs ɪɴ sᴘᴇᴄɪғɪᴇᴅ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜsᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ɪᴛ ғʀᴏᴍ sᴘᴇᴄɪᴀʟ ʟɪɴᴋ » @ultroidofficial</b>")
 try:
     ADMINS=[1993048420, 5743248220, 5150045729, 1214348787, 6297086120]
-    for x in (os.environ.get("ADMINS", "1993048420", "5743248220", "5150045729", "1214348787", "6297086120").split()):
+    for x in (os.environ.get("ADMINS", "1993048420, 5743248220, 5150045729, 1214348787, 6297086120").split(',')):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
